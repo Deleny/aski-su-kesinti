@@ -1,14 +1,23 @@
 {
-  "guncelleme": "2026-11-15T15:17:14+03:00",
+  "guncelleme": "2026-11-15T22:07:39+03:00",
   "kesintiler": [
     {
-      "id": "5d676c095a272607",
+      "id": "98ecc1b95c5eefc8",
       "ilce": "MAMAK",
       "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-15T12:40:00",
-      "tamir_tarihi": "2026-11-15T18:00:00",
-      "detay": "Değerli abonelerimiz, Cengizhan mahallesi Şehit Murat yatar kalkmaz caddesi içerinde Q150 lik içme suyu hattı arızası nedeniyle,15 Kasım.2026 saat-12:40 ile 15 Kasım.2026 saat-18:00 saatleri arasında su verilemeyecektir.",
-      "etkilenen_yerler": "Cengizhan mahallesi, Fahri Korutürk mahallerin üst kotları Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir."
+      "ariza_tarihi": "2026-11-15T18:05:00",
+      "tamir_tarihi": "2026-11-15T23:30:00",
+      "detay": "PLANSIZ SU KESİNTİSİ: Mamak İlçesi Bostancık Mahallesi içerisinde bulunan P 11 Pompa İstasyonda enerji kesintisinden dolayı plansız su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür diler. Sabır ve anlayışınız için teşekkür ederiz. Etkilenen yerler: Bostancık mahallesi, Ekin mahallesi, Başak mahallesi, Karaağaç mahallesi, Altıağaç mahallesi, Harman mahallesi, Hüseyin Gazi Mahalleleri üst kotları",
+      "etkilenen_yerler": ": Bostancık mahallesi, Ekin mahallesi, Başak mahallesi, Karaağaç mahallesi, Altıağaç mahallesi, Harman mahallesi, Hüseyin Gazi Mahalleleri üst kotları"
+    },
+    {
+      "id": "1c37e92ded6bcf65",
+      "ilce": "YENİMAHALLE",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-15T20:00:00",
+      "tamir_tarihi": "2026-11-16T02:00:00",
+      "detay": "Turgut Özal mahallesi 2141 cadde içerisindeki P 110 luk boru arızadan dolayı su kesintisi yapılmıştı.Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Turgut özal 2141 cadde ve civarı"
     }
   ]
 }
