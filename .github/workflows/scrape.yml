@@ -1,0 +1,50 @@
+name: ASKİ kesintilerini çek
+
+on:
+  schedule:
+    - cron: "*/15 * * * *" # 15 dakikada bir
+  workflow_dispatch: # Actions sekmesinden elle çalıştırabilmek için
+  push: # scraper ya da bu dosya değişince hemen dene
+    paths:
+      - scraper.py
+      - .github/workflows/scrape.yml
+
+# Botun repoya commit atabilmesi için yazma izni
+permissions:
+  contents: write
+
+# Aynı anda iki çalışma olmasın; yenisi eskisinin bitmesini beklesin
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu indir
+        uses: actions/checkout@v7
+
+      - name: Python kur
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Gereksinimleri yükle
+        run: pip install -r requirements.txt
+
+      - name: Scraper'ı çalıştır
+        run: python scraper.py
+
+      - name: Değişiklik varsa commit edip push et
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kesintiler.db kesintiler.json
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok, commit atılmadı."
+          else
+            git commit -m "Kesintiler güncellendi"
+            git pull --rebase
+            git push
+          fi

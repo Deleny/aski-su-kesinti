@@ -1,0 +1,14 @@
+{
+  "guncelleme": "2026-11-15T15:17:14+03:00",
+  "kesintiler": [
+    {
+      "id": "5d676c095a272607",
+      "ilce": "MAMAK",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-15T12:40:00",
+      "tamir_tarihi": "2026-11-15T18:00:00",
+      "detay": "Değerli abonelerimiz, Cengizhan mahallesi Şehit Murat yatar kalkmaz caddesi içerinde Q150 lik içme suyu hattı arızası nedeniyle,15 Kasım.2026 saat-12:40 ile 15 Kasım.2026 saat-18:00 saatleri arasında su verilemeyecektir.",
+      "etkilenen_yerler": "Cengizhan mahallesi, Fahri Korutürk mahallerin üst kotları Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir."
+    }
+  ]
+}

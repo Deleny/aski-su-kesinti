@@ -1,0 +1,10 @@
+# Python
+venv/
+__pycache__/
+
+# Mobil (Expo)
+node_modules/
+.expo/
+
+# Gizli ayarlar
+.env
