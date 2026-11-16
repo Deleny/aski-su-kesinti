@@ -1,23 +1,59 @@
 {
-  "guncelleme": "2026-11-15T22:07:39+03:00",
+  "guncelleme": "2026-11-16T13:50:17+03:00",
   "kesintiler": [
     {
-      "id": "98ecc1b95c5eefc8",
-      "ilce": "MAMAK",
+      "id": "df6d59ccb2eaae35",
+      "ilce": "ETİMESGUT",
       "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-15T18:05:00",
-      "tamir_tarihi": "2026-11-15T23:30:00",
-      "detay": "PLANSIZ SU KESİNTİSİ: Mamak İlçesi Bostancık Mahallesi içerisinde bulunan P 11 Pompa İstasyonda enerji kesintisinden dolayı plansız su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür diler. Sabır ve anlayışınız için teşekkür ederiz. Etkilenen yerler: Bostancık mahallesi, Ekin mahallesi, Başak mahallesi, Karaağaç mahallesi, Altıağaç mahallesi, Harman mahallesi, Hüseyin Gazi Mahalleleri üst kotları",
-      "etkilenen_yerler": ": Bostancık mahallesi, Ekin mahallesi, Başak mahallesi, Karaağaç mahallesi, Altıağaç mahallesi, Harman mahallesi, Hüseyin Gazi Mahalleleri üst kotları"
+      "ariza_tarihi": "2026-11-16T09:30:00",
+      "tamir_tarihi": "2026-11-16T16:00:00",
+      "detay": "Değerli abonelerimiz, Piyade mahallesi 1855 sokak içerisinde bulunan Ø110 dağıtım şebeke hattında oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Piyade Mahallesi bir kısmı"
     },
     {
-      "id": "1c37e92ded6bcf65",
+      "id": "a2b5c0e3edc34d02",
+      "ilce": "POLATLI",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-16T10:25:00",
+      "tamir_tarihi": "2026-11-16T17:00:00",
+      "detay": "Değerli abonelerimiz Şehitlik Mahallesi Kızılcık Sokak üzerinde bulunan içme suyu dağıtım şebeke hattında Ø 110 mm PVC boru arızası nedeniyle 10:25 ile 17:00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Şehitlik Mahallesi bir bölümü."
+    },
+    {
+      "id": "740725dde2901fb3",
       "ilce": "YENİMAHALLE",
       "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-15T20:00:00",
-      "tamir_tarihi": "2026-11-16T02:00:00",
-      "detay": "Turgut Özal mahallesi 2141 cadde içerisindeki P 110 luk boru arızadan dolayı su kesintisi yapılmıştı.Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
-      "etkilenen_yerler": "Turgut özal 2141 cadde ve civarı"
+      "ariza_tarihi": "2026-11-16T10:45:00",
+      "tamir_tarihi": "2026-11-16T15:00:00",
+      "detay": "Kent Koop mahallesi 1858 cadde içerisinde bulunan peØ100 lük boru arızası nedeniyle su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Kent Koop mahallesi 1858 cadde Bizim Çınarkent sitesi"
+    },
+    {
+      "id": "bff310110abfe912",
+      "ilce": "ÇUBUK",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-16T11:40:00",
+      "tamir_tarihi": "2026-11-16T14:00:00",
+      "detay": "Değerli abonelerimiz, Çubuk İlçesi Yıldırım Beyazıt mahallesi Dağıstan sokak içerisinde dağıtım şebeke hattına Enerjisa tarafından hasar verilmiş olup, oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Yıldırım Beyazıt mahallesi Dağıstan sokak ve bağlı sokaklar."
+    },
+    {
+      "id": "f18b0fd27cb5e7f7",
+      "ilce": "POLATLI",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-16T12:15:00",
+      "tamir_tarihi": "2026-11-16T17:00:00",
+      "detay": "Değerli abonelerimiz Şentepe Mahallesi Asmalı sokak üzerinde bulunan içme suyu dağıtım şebeke hattında 3. Şahıslardan kaynaklı Ø 110 mm PVC boru arızası nedeniyle 12:15 ile 17:00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Şentepe Mahallesi bir bölümü."
+    },
+    {
+      "id": "3364a5337462f2e0",
+      "ilce": "YENİMAHALLE",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-16T12:40:00",
+      "tamir_tarihi": "2026-11-16T17:00:00",
+      "detay": "Cumhuriyet mahallesi 5609 sokak içerisinde bulunan peØ100 lük boru arızası nedeniyle su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Cumhuriyet mahallesi 5609 sokak ve civarı."
     }
   ]
 }
