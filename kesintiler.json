@@ -1,69 +1,6 @@
 {
-  "guncelleme": "2026-11-17T15:20:56+03:00",
+  "guncelleme": "2026-11-18T00:13:51+03:00",
   "kesintiler": [
-    {
-      "id": "c2a66c4e904746bf",
-      "ilce": "ETİMESGUT",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-17T10:05:00",
-      "tamir_tarihi": "2026-11-17T17:00:00",
-      "detay": "Değerli abonelerimiz, Tunahan mahallesi Yaşar Doğu sokak içerisinde bulunan Ø110 dağıtım şebeke hattında oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
-      "etkilenen_yerler": "Tunahan Mahallesi bir kısmı"
-    },
-    {
-      "id": "017595cc4df69ad5",
-      "ilce": "ÇUBUK",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-17T11:00:00",
-      "tamir_tarihi": "2026-11-17T16:00:00",
-      "detay": "Değerli abonelerimiz Çubuk İlçesi Atatürk Mahallesi Kıvılcım caddesi üzerinde bulunan içme suyu dağıtım şebeke hattında oluşan arıza nedeniyle saat 11:00 ile 16:00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
-      "etkilenen_yerler": "Atatürk Mah Geneli"
-    },
-    {
-      "id": "0a0e8b18b20ac1c8",
-      "ilce": "GÖLBAŞI",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-17T11:15:00",
-      "tamir_tarihi": "2026-11-17T16:00:00",
-      "detay": "Değerli abonelerimiz, Taşpınar Mahallesi 2886 Sokak üzerinde 110’luk içme suyu hattında yapılacak olan arıza çalışması nedeniyle su kesintisi yapılmıştır",
-      "etkilenen_yerler": "Taşpınar Mahallesi bir kısmına"
-    },
-    {
-      "id": "879ec2db56fc6546",
-      "ilce": "YENİMAHALLE",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-17T11:20:00",
-      "tamir_tarihi": "2026-11-17T17:00:00",
-      "detay": "Yakacık Mahallesi 3576 sokak içerisinde Ø150 lik Duktil boruda oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.",
-      "etkilenen_yerler": "Yakacık Mahallesi 3585 cadde ve üst kotlar"
-    },
-    {
-      "id": "4d8947dcc86c4d59",
-      "ilce": "YENİMAHALLE",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-17T12:40:00",
-      "tamir_tarihi": "2026-11-17T17:00:00",
-      "detay": "İvedikköy Mahallesi Anadolu bulvarı içerisinde peØ110 luk boruda oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.",
-      "etkilenen_yerler": "İvedikköy mahallesi Anadolu bulvarı otaban çıkışı."
-    },
-    {
-      "id": "b62c0b7c956a7d79",
-      "ilce": "YENİMAHALLE",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-17T14:00:00",
-      "tamir_tarihi": "2026-11-17T17:00:00",
-      "detay": "Çakırlar Mahallesi 2293 sokak içerisinde peØ90 lık boruda oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.",
-      "etkilenen_yerler": "Çakırlar Mahallesi 2293 sokak Mesutevler sitesi."
-    },
-    {
-      "id": "d85a938ba6da8e14",
-      "ilce": "MAMAK",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-17T14:20:00",
-      "tamir_tarihi": "2026-11-17T20:00:00",
-      "detay": "Değerli abonelerimiz,Akdere mahallesi 382 sokak içerinde Q150 lik içme suyu hattı arızası nedeniyle,17 Kasım.2026 saat-14:20 ile 17 Kasım.2026 saat-20:00 saatleri arasında su verilemeyecektir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
-      "etkilenen_yerler": "Etkilenen yerler ; Akdere mahallesi, Kazım Orbay, Şehit Cengiz Topel mahallesi, Peyami Sefa, Türközü mahallerin üst kotları"
-    },
     {
       "id": "1b61722a8525fff8",
       "ilce": "YENİMAHALLE",
@@ -72,6 +9,15 @@
       "tamir_tarihi": "2026-11-18T23:55:00",
       "detay": "Değerli abonelerimiz, Yenimahalle İlçesi Yuva Mahallesi’ nde İmalatı tamamlanan çelik içme suyu deplase hattının , mevcut çelik içme suyu hattına bağlantısı yapılacaktır.Bu nedenle planlı su kesintisi yaşanacaktır.Vereceğimiz rahatsızlıktan dolayı özür dileriz.",
       "etkilenen_yerler": "Yuva Mahallesi ,Karacakaya Mahallesi Mermerciler Sanayi Sitesi ' nin tamamı ve İvedik Organize Sanayi Bölgesi ' nin bir kısmı"
+    },
+    {
+      "id": "d9393c5f9764bbe7",
+      "ilce": "YENİMAHALLE",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-17T20:15:00",
+      "tamir_tarihi": "2026-11-18T14:00:00",
+      "detay": "Yakacık Mahallesindeki 200lük duktil boru deplase ( altyapı ) çalışması sebebiyle plansız su kesintisi yapılmıştır.Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.",
+      "etkilenen_yerler": "Yakacık mahallesi alt kotları"
     },
     {
       "id": "9aaa118769916b62",
@@ -89,7 +35,7 @@
       "ariza_tarihi": "2026-11-18T23:55:00",
       "tamir_tarihi": "2026-11-19T23:55:00",
       "detay": "Değerli abonelerimiz, Ankara Metropol Kent İçmesuyu Ana İsale Hattı Projesi İnşaatı Yapım İşi kapsamında yürütülen çalışmalar tamamlanmış olup, Yenimahalle ilçesi Özevler Mahallesi’nde bulunan P1 Pompa İstasyonu’nda Ø1400 mm çelik boru bağlantı imalatı gerçekleştirilecektir. Söz konusu bağlantı çalışmalarının yapılabilmesi için P1 Pompa İstasyonu’nda zorunlu su kesintisi uygulanacaktır. Yapılacak kesintiden Yenimahalle ve Keçiören ilçelerinin büyük bir bölümünün etkilenmesi öngörülmektedir. Vatandaşlarımızın günlük yaşamlarının ve eğitim faaliyetlerinin en az düzeyde etkilenmesini sağlamak amacıyla, bağlantı çalışmalarının okulların tatil dönemine denk gelecek şekilde gerçekleştirilmesi planlanmıştır. Çalışmaların tamamlanmasının ardından su arzı yeniden sağlanacaktır. Vatandaşlarımıza gösterecekleri anlayış ve sabır için teşekkür ederiz.",
-      "etkilenen_yerler": "Anadolu,Avcılar ,Barıştepe , Burç ,Çiğdemtepe ,Ergenekon ,Güventepe ,Güzelyaka ,İvedik ,Kaletepe ,Karşıyaka ,Kayalar ,Kuzey Yıldızı ,Memlik ,Pamuklar ,Serhat ,Yakacık ,Yeşilevler ,Yukarı Yahyalar ,Yunus Emre Mahalleleri"
+      "etkilenen_yerler": "Anadolu,Avcılar ,Barıştepe , Burç ,Çiğdemtepe ,Ergenekon ,Esentepe, Güventepe ,Güzelyaka ,İvedik ,Kaletepe ,Karşıyaka ,Kayalar ,Kuzey Yıldızı ,Memlik ,Pamuklar ,Serhat ,Yakacık ,Yeşilevler ,Yukarı Yahyalar ,Özevler, Yunus Emre Mahalleleri"
     }
   ]
 }
