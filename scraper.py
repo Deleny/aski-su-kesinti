@@ -120,40 +120,64 @@ def kesintileri_ayikla(html):
 
     kesintiler = []
     gorulen_idler = set()
-    for kart in kartlar:
-        # İlk kalın başlık ilçe, ikincisi kaynak ("Arıza Kaynaklı" gibi)
-        basliklar = kart.select("h4 strong")
-        paragraf = kart.select_one("p")
-        if len(basliklar) < 2 or paragraf is None:
-            raise ValueError("kartın içinde başlıklar ya da paragraf yok")
+    hatali_kartlar = []
+    for sira, kart in enumerate(kartlar, start=1):
+        try:
+            kesinti = karti_oku(kart)
+        except ValueError as hata:
+            # Tek bir garip kart yüzünden bütün listeyi kaybetmeyelim:
+            # bu kartı atla, uyarı yaz, diğerleriyle devam et.
+            hatali_kartlar.append(f"{sira}. kart: {hata}")
+            continue
 
-        alanlar = alanlari_oku(paragraf)
-        for etiket in ETIKETLER:
-            if etiket not in alanlar:
-                raise ValueError(f"kartta '{etiket}' alanı yok")
-
-        ilce = ilce_normalize(basliklar[0].get_text())
-        ariza_tarihi = tarih_cevir(alanlar["Arıza Tarihi"])
-        detay = alanlar["Detay"]
-        # Tamir tarihi boş bırakılmış olabilir; arıza tarihi ise zorunlu
-        tamir = alanlar["Tamir Tarihi"]
-
-        kimlik = kimlik_uret(ilce, ariza_tarihi, detay)
-        if kimlik in gorulen_idler:
+        if kesinti["id"] in gorulen_idler:
             continue  # aynı kart sayfada iki kez varsa birini al
-        gorulen_idler.add(kimlik)
+        gorulen_idler.add(kesinti["id"])
+        kesintiler.append(kesinti)
 
-        kesintiler.append({
-            "id": kimlik,
-            "ilce": ilce,
-            "kaynak": bosluk_temizle(basliklar[1].get_text()),
-            "ariza_tarihi": ariza_tarihi,
-            "tamir_tarihi": tarih_cevir(tamir) if tamir else None,
-            "detay": detay,
-            # Sayfada bu alan "; Cengizhan mahallesi..." diye başlıyor
-            "etkilenen_yerler": alanlar["Etkilenen Yerler"].lstrip("; "),
-        })
+    for aciklama in hatali_kartlar:
+        # "::warning::" ile başlayan satır GitHub Actions'ta uyarı olarak görünür
+        print(f"::warning::Kart atlandı ({aciklama})")
+
+    # Kart var ama hiçbiri okunamadıysa sayfa yapısı gerçekten değişmiş demektir
+    if hatali_kartlar and not kesintiler:
+        raise ValueError(f"{len(kartlar)} kartın hiçbiri okunamadı; "
+                         f"ilk hata: {hatali_kartlar[0]}")
     return kesintiler
+
+
+def karti_oku(kart):
+    """Tek bir kesinti kartını sözlüğe çevirir.
+
+    Kart beklenen yapıda değilse ValueError fırlatır.
+    """
+    # İlk kalın başlık ilçe, ikincisi kaynak ("Arıza Kaynaklı" gibi)
+    basliklar = kart.select("h4 strong")
+    paragraf = kart.select_one("p")
+    if len(basliklar) < 2 or paragraf is None:
+        raise ValueError("kartın içinde başlıklar ya da paragraf yok")
+
+    alanlar = alanlari_oku(paragraf)
+    for etiket in ETIKETLER:
+        if etiket not in alanlar:
+            raise ValueError(f"kartta '{etiket}' alanı yok")
+
+    ilce = ilce_normalize(basliklar[0].get_text())
+    ariza_tarihi = tarih_cevir(alanlar["Arıza Tarihi"])  # bozuksa ValueError
+    detay = alanlar["Detay"]
+    # Tamir tarihi boş bırakılmış olabilir; arıza tarihi ise zorunlu
+    tamir = alanlar["Tamir Tarihi"]
+
+    return {
+        "id": kimlik_uret(ilce, ariza_tarihi, detay),
+        "ilce": ilce,
+        "kaynak": bosluk_temizle(basliklar[1].get_text()),
+        "ariza_tarihi": ariza_tarihi,
+        "tamir_tarihi": tarih_cevir(tamir) if tamir else None,
+        "detay": detay,
+        # Sayfada bu alan "; Cengizhan mahallesi..." diye başlıyor
+        "etkilenen_yerler": alanlar["Etkilenen Yerler"].lstrip("; "),
+    }
 
 
 def onceki_listeyi_oku():
