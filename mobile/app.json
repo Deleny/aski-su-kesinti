@@ -20,6 +20,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6d78341c-8632-4e56-a4e6-00ffe6467b22"
+      }
+    },
+    "owner": "deleny"
   }
 }

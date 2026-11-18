@@ -1,0 +1,83 @@
+# ASKİ Su Kesintileri
+
+Ankara'daki su kesintilerini ASKİ'nin sitesinden otomatik okuyup telefonda ilçe ilçe gösteren basit bir sistem.
+
+## Mimari
+
+```
+ASKİ sayfası (www.aski.gov.tr/tr/Kesinti.aspx)
+        │
+        │  GitHub Actions (zamanlanmış, hedef: 15 dakikada bir)
+        ▼
+   scraper.py ──► kesintiler.db    (SQLite: görülen tüm kesintiler, geçmiş)
+              ──► kesintiler.json  (sadece şu an sayfada olanlar)
+        │
+        │  liste değiştiyse bot repoya commit atar
+        ▼
+raw.githubusercontent.com/Deleny/aski-su-kesinti/main/kesintiler.json
+        │
+        ▼
+   Expo uygulaması (mobile/App.js) okur ve gösterir
+```
+
+Sunucu yok, API yok: GitHub hem zamanlayıcı hem de dosya sunucusu görevini görüyor.
+
+| Dosya | Görevi |
+|---|---|
+| `scraper.py` | Sayfayı indirir, kartları okur, db ve json dosyalarını günceller. Liste değişmediyse dosyalara dokunmaz. |
+| `kesintiler.db` | Tek tablo (`kesintiler`). Sayfadan kalkan kesinti silinmez, `aktif = 0` olur. |
+| `kesintiler.json` | `{"guncelleme": "...", "kesintiler": [...]}` |
+| `.github/workflows/scrape.yml` | Scraper'ı çalıştırır, değişiklik varsa commit edip push eder. |
+| `mobile/App.js` | Uygulamanın tamamı. JSON adresi dosyanın en üstünde. |
+
+## Nasıl çalıştırılır
+
+Windows PowerShell'de `npx` ve `npm` yerine `npx.cmd` ve `npm.cmd` yaz.
+
+**Scraper (bilgisayarda deneme):**
+
+```bash
+python -m venv venv
+.\venv\Scripts\pip install -r requirements.txt
+.\venv\Scripts\python scraper.py
+```
+
+Yerelde çalıştırınca `kesintiler.db` ve `kesintiler.json` değişebilir. Bunları commit etme, bot zaten güncelliyor; geri almak için: `git restore kesintiler.db kesintiler.json`
+
+**Workflow'u elle tetiklemek:** GitHub'da Actions → "ASKİ kesintilerini çek" → Run workflow.
+
+**Mobil uygulama (Expo Go):**
+
+```bash
+cd mobile
+npm install
+npx expo start
+```
+
+Telefona Expo Go'yu kur, terminaldeki QR kodu okut (iPhone'da Kamera uygulamasıyla). Telefon ve bilgisayar aynı ağda olmalı.
+
+**Android APK:**
+
+```bash
+cd mobile
+npx eas-cli@latest build -p android --profile preview
+```
+
+## Git ile çalışırken
+
+Bot da repoya commit attığı için **push etmeden önce mutlaka** şunu çalıştır:
+
+```bash
+git pull --rebase
+```
+
+Yoksa push "rejected" hatasıyla reddedilir.
+
+## Bilinen sınırlar
+
+- **Veri gecikmeli.** Hedef 15-20 dakikalık gecikme. Ama GitHub zamanlanmış çalışmaları yoğunlukta geciktirip atlayabiliyor: ilk üç günde workflow ortalama 7 saatte bir çalıştı. Üstüne raw.githubusercontent.com dosyayı yaklaşık 5 dakika önbellekte tutuyor.
+- **Bildirim yok.** Uygulamayı açıp bakmak gerekir.
+- **ASKİ sayfa yapısını değiştirirse scraper güncellenmeli.** Bu durumda Actions'taki çalışmalar kırmızı olur ve dosyalar eski hâliyle kalır.
+- **Okunamayan tek bir kart atlanır.** Actions'ta uyarı olarak görünür, o kesinti uygulamada çıkmaz.
+- **İlçe adları sabit listeyle eşleşmeli.** ASKİ bir ilçeyi farklı yazarsa o kesinti sadece "Tümü"de görünür.
+- Tarih ve saatler Türkiye saatidir.
