@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-18T13:40:45+03:00",
+  "guncelleme": "2026-11-18T21:52:33+03:00",
   "kesintiler": [
     {
       "id": "1b61722a8525fff8",
@@ -11,49 +11,31 @@
       "etkilenen_yerler": "Yuva Mahallesi ,Karacakaya Mahallesi Mermerciler Sanayi Sitesi ' nin tamamı ve İvedik Organize Sanayi Bölgesi ' nin bir kısmı"
     },
     {
-      "id": "d9393c5f9764bbe7",
+      "id": "3e731dfd04e2fcd1",
+      "ilce": "BEYPAZARI",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-18T17:00:00",
+      "tamir_tarihi": "2026-11-18T23:55:00",
+      "detay": "Beypazarı İlçesi Kurtuluş mahallesi Ilıman küme evler sokakta 90 lık PVC Boru hattında oluşan arıza Nedeni ile 17:00 ile 23:55 saatleri arasında su kesintisi uygulanacaktır Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Kurtuluş mahallesi Ilıman küme evler sokak ve civarı"
+    },
+    {
+      "id": "37d99d6fab357191",
+      "ilce": "ÇANKAYA",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-18T19:15:00",
+      "tamir_tarihi": "2026-11-18T22:00:00",
+      "detay": "Değerli abonelerimiz, Mürsel Uluç mahallesi İlker caddesi üzerinde Ø100'luk düktil içme suyu hattı arızası nedeniyle su kesintisi yaşanmaktadır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "İlker Mahallesi, Mürsel Uluç Mahallesi"
+    },
+    {
+      "id": "defae60249009f90",
       "ilce": "YENİMAHALLE",
       "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-17T20:15:00",
-      "tamir_tarihi": "2026-11-18T17:00:00",
-      "detay": "Yakacık Mahallesindeki 200lük duktil boru deplase ( altyapı ) çalışması sebebiyle plansız su kesintisi yapılmıştır.Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.",
-      "etkilenen_yerler": "Yakacık mahallesi alt kotları , 3586 cadde ve civar"
-    },
-    {
-      "id": "2383a14735886bd6",
-      "ilce": "MAMAK",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-18T08:50:00",
-      "tamir_tarihi": "2026-11-18T16:00:00",
-      "detay": "Değerli abonelerimiz, Şahap Gürler mahallesi 1242/1sokak içerinde Q100 lük içme suyu hattı arızası nedeniyle,18 Kasım.2026 saat-08:40 ile 18 Kasım.2026 saat-16 :00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
-      "etkilenen_yerler": "ŞAHAPGÜRLER MAHALLESİ"
-    },
-    {
-      "id": "145e2fe9a9dd9b0e",
-      "ilce": "GÖLBAŞI",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-18T10:15:00",
-      "tamir_tarihi": "2026-11-18T15:00:00",
-      "detay": "Değerli abonelerimiz, Yaylabağ Mahallesi Yaylabağ Caddesi üzerinde 160’lık içme suyu hattında yapılacak olan arıza çalışması nedeniyle su kesintisi yapılmıştır.",
-      "etkilenen_yerler": "Yaylabağ Mahallesine"
-    },
-    {
-      "id": "65be8512c5274fb5",
-      "ilce": "NALLIHAN",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-18T12:25:00",
-      "tamir_tarihi": "2026-11-18T18:00:00",
-      "detay": "Nallıhan ilçesi Sarıyar mahallesi içme suyu deposuna su sağlayan sondaj kuyusunda motor arızasından kaynaklı plansız su kesintisi yapılmaktadır.",
-      "etkilenen_yerler": "Sarıyar mahallesi geneli"
-    },
-    {
-      "id": "58a5fbbe22a70abe",
-      "ilce": "ÇUBUK",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-18T13:30:00",
-      "tamir_tarihi": "2026-11-18T15:00:00",
-      "detay": "Değerli abonelerimiz, Çubuk İlçesi Atatürk Mahallesi Damla Sokakta bulunan içmesuyu hattında oluşan arıza nedeniyle 13:30 ile 15:00 saatleri arasında plansız su kesintisi yapılacaktır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
-      "etkilenen_yerler": "Atatürk Mahallesi Geneli"
+      "ariza_tarihi": "2026-11-18T19:15:00",
+      "tamir_tarihi": "2026-11-18T23:00:00",
+      "detay": "Yakacık Mahallesindeki Ø150lik duktil boru deplase ( altyapı ) çalışması sebebiyle plansız su kesintisi yapılmıştır.Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.",
+      "etkilenen_yerler": "Yakacık mahallesi 3575 sokak civarı"
     },
     {
       "id": "9aaa118769916b62",
@@ -83,6 +65,51 @@
       "tamir_tarihi": "2026-11-19T23:55:00",
       "detay": "eğerli abonelerimiz, Ankara Metropol Kent İçmesuyu Ana İsale Hattı Projesi İnşaatı Yapım İşi kapsamında yürütülen çalışmalar tamamlanmış olup, Yenimahalle ilçesi Özevler Mahallesi’nde bulunan P1 Pompa İstasyonu’nda Ø1400 mm çelik boru bağlantı imalatı gerçekleştirilecektir. Söz konusu bağlantı çalışmalarının yapılabilmesi için P1 Pompa İstasyonu’nda zorunlu su kesintisi uygulanacaktır. Yapılacak kesintiden Yenimahalle ve Keçiören ilçelerinin büyük bir bölümünün etkilenmesi öngörülmektedir. Vatandaşlarımızın günlük yaşamlarının ve eğitim faaliyetlerinin en az düzeyde etkilenmesini sağlamak amacıyla, bağlantı çalışmalarının okulların tatil dönemine denk gelecek şekilde gerçekleştirilmesi planlanmıştır. Çalışmaların tamamlanmasının ardından su arzı yeniden sağlanacaktır. Vatandaşlarımıza gösterecekleri anlayış ve sabır için teşekkür ederiz.",
       "etkilenen_yerler": "Anadolu,Avcılar ,Barıştepe , Burç ,Çğdemtepe ,Ergenekon ,Güventepe ,Güzelyaka ,İvedik ,Kaletepe ,Karşıyaka ,Kayalar ,Kuzey Yıldızı ,Memlik ,Pamuklar ,Serhat ,Yakacık ,Yeşilevler ,Yukarı Yahyalar ,Yunus Emre"
+    },
+    {
+      "id": "58a5fbbe22a70abe",
+      "ilce": "ÇUBUK",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-18T13:30:00",
+      "tamir_tarihi": "2026-11-18T15:00:00",
+      "detay": "Değerli abonelerimiz, Çubuk İlçesi Atatürk Mahallesi Damla Sokakta bulunan içmesuyu hattında oluşan arıza nedeniyle 13:30 ile 15:00 saatleri arasında plansız su kesintisi yapılacaktır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Atatürk Mahallesi Geneli"
+    },
+    {
+      "id": "65be8512c5274fb5",
+      "ilce": "NALLIHAN",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-18T12:25:00",
+      "tamir_tarihi": "2026-11-18T18:00:00",
+      "detay": "Nallıhan ilçesi Sarıyar mahallesi içme suyu deposuna su sağlayan sondaj kuyusunda motor arızasından kaynaklı plansız su kesintisi yapılmaktadır.",
+      "etkilenen_yerler": "Sarıyar mahallesi geneli"
+    },
+    {
+      "id": "145e2fe9a9dd9b0e",
+      "ilce": "GÖLBAŞI",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-18T10:15:00",
+      "tamir_tarihi": "2026-11-18T15:00:00",
+      "detay": "Değerli abonelerimiz, Yaylabağ Mahallesi Yaylabağ Caddesi üzerinde 160’lık içme suyu hattında yapılacak olan arıza çalışması nedeniyle su kesintisi yapılmıştır.",
+      "etkilenen_yerler": "Yaylabağ Mahallesine"
+    },
+    {
+      "id": "2383a14735886bd6",
+      "ilce": "MAMAK",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-18T08:50:00",
+      "tamir_tarihi": "2026-11-18T16:00:00",
+      "detay": "Değerli abonelerimiz, Şahap Gürler mahallesi 1242/1sokak içerinde Q100 lük içme suyu hattı arızası nedeniyle,18 Kasım.2026 saat-08:40 ile 18 Kasım.2026 saat-16 :00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "ŞAHAPGÜRLER MAHALLESİ"
+    },
+    {
+      "id": "d9393c5f9764bbe7",
+      "ilce": "YENİMAHALLE",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-17T20:15:00",
+      "tamir_tarihi": "2026-11-18T17:00:00",
+      "detay": "Yakacık Mahallesindeki 200lük duktil boru deplase ( altyapı ) çalışması sebebiyle plansız su kesintisi yapılmıştır.Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.",
+      "etkilenen_yerler": "Yakacık mahallesi alt kotları , 3586 cadde ve civar"
     },
     {
       "id": "d85a938ba6da8e14",
