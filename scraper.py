@@ -32,10 +32,32 @@ JSON_DOSYASI = KLASOR / "kesintiler.json"
 # GitHub'ın sunucuları UTC saatiyle çalışır; biz zamanı Türkiye saatiyle yazıyoruz
 TURKIYE_SAATI = timezone(timedelta(hours=3))
 
+# Uygulamada "Geçmiş" listesinde son kaç günün biten kesintileri gösterilsin.
+# Veritabanı hepsini saklar; bu sadece JSON dosyası şişmesin diye.
+GECMIS_GUN = 30
+
 
 def bosluk_temizle(metin):
     """Satır sonlarını ve art arda gelen boşlukları tek boşluğa indirir."""
     return " ".join(metin.split())
+
+
+def turkce_harfsiz(metin):
+    """Büyük Türkçe harfleri İngilizce karşılıklarına çevirir: ŞİŞLİ -> SISLI."""
+    return metin.translate(str.maketrans("ÇĞİÖŞÜ", "CGIOSU"))
+
+
+# Ankara'nın 25 ilçesi, doğru yazılışlarıyla (mobil uygulamadaki listeyle aynı).
+# ASKİ bazen ilçe adını Türkçe harfsiz yazıyor ("SEREFLIKOÇHISAR" gibi);
+# harfsiz hâlinden doğru yazılışa giden bir sözlük kuruyoruz.
+ILCELER = [
+    "AKYURT", "ALTINDAĞ", "AYAŞ", "BALA", "BEYPAZARI",
+    "ÇAMLIDERE", "ÇANKAYA", "ÇUBUK", "ELMADAĞ", "ETİMESGUT",
+    "EVREN", "GÖLBAŞI", "GÜDÜL", "HAYMANA", "KAHRAMANKAZAN",
+    "KALECİK", "KEÇİÖREN", "KIZILCAHAMAM", "MAMAK", "NALLIHAN",
+    "POLATLI", "PURSAKLAR", "SİNCAN", "ŞEREFLİKOÇHİSAR", "YENİMAHALLE",
+]
+DOGRU_YAZILIS = {turkce_harfsiz(ilce): ilce for ilce in ILCELER}
 
 
 def ilce_normalize(metin):
@@ -44,9 +66,12 @@ def ilce_normalize(metin):
     Python'un upper() fonksiyonu Türkçe bilmez: "i" harfini "I" yapar
     ("çubuk" doğru çıkar ama "sincan" -> "SINCAN" olur). Bu yüzden önce
     i -> İ ve ı -> I çevirisini elle yapıp sonra upper() çağırıyoruz.
+    Sonra ad 25 ilçeden birine benziyorsa onun doğru yazılışını kullanıyoruz.
     """
     metin = bosluk_temizle(metin)
-    return metin.replace("i", "İ").replace("ı", "I").upper()
+    buyuk = metin.replace("i", "İ").replace("ı", "I").upper()
+    # Listede yoksa (yeni ya da bilinmeyen bir ad) olduğu gibi bırak
+    return DOGRU_YAZILIS.get(turkce_harfsiz(buyuk), buyuk)
 
 
 def tarih_cevir(metin):
@@ -187,7 +212,11 @@ def onceki_listeyi_oku():
     """
     if not JSON_DOSYASI.exists() or not DB_DOSYASI.exists():
         return None
-    return json.loads(JSON_DOSYASI.read_text(encoding="utf-8"))["kesintiler"]
+    veri = json.loads(JSON_DOSYASI.read_text(encoding="utf-8"))
+    # Eski biçimde (geçmiş listesi olmadan) yazılmışsa bir kez yeniden yazılsın
+    if "gecmis" not in veri:
+        return None
+    return veri["kesintiler"]
 
 
 def veritabanini_guncelle(kesintiler, simdi):
@@ -234,9 +263,37 @@ def veritabanini_guncelle(kesintiler, simdi):
     baglanti.close()
 
 
-def json_yaz(kesintiler, simdi):
-    """Mobil uygulamanın okuyacağı güncel listeyi yazar."""
-    veri = {"guncelleme": simdi, "kesintiler": kesintiler}
+def gecmisi_oku():
+    """Son GECMIS_GUN gün içinde başlamış ve artık sayfada olmayan kesintileri
+    veritabanından okur, en yeniden eskiye sıralı döndürür."""
+    sinir = (datetime.now(TURKIYE_SAATI) - timedelta(days=GECMIS_GUN))
+    # Veritabanındaki tarihler "2026-11-15T12:40:00" biçiminde (saat dilimi yok);
+    # aynı biçimde yazınca metin olarak karşılaştırmak tarih karşılaştırması olur.
+    sinir = sinir.strftime("%Y-%m-%dT%H:%M:%S")
+
+    baglanti = sqlite3.connect(DB_DOSYASI)
+    baglanti.row_factory = sqlite3.Row  # satırları sözlük gibi okuyabilmek için
+    satirlar = baglanti.execute(
+        """SELECT id, ilce, kaynak, ariza_tarihi, tamir_tarihi, detay, etkilenen_yerler
+           FROM kesintiler
+           WHERE aktif = 0 AND ariza_tarihi >= ?
+           ORDER BY ariza_tarihi DESC""",
+        (sinir,),
+    ).fetchall()
+    baglanti.close()
+
+    gecmis = []
+    for satir in satirlar:
+        kesinti = dict(satir)
+        # Eski kayıtlarda ilçe adı hatalı yazılmış olabilir; gösterirken düzelt
+        kesinti["ilce"] = ilce_normalize(kesinti["ilce"])
+        gecmis.append(kesinti)
+    return gecmis
+
+
+def json_yaz(kesintiler, gecmis, simdi):
+    """Mobil uygulamanın okuyacağı dosyayı yazar: güncel liste ve geçmiş."""
+    veri = {"guncelleme": simdi, "kesintiler": kesintiler, "gecmis": gecmis}
     # ensure_ascii=False: Türkçe harfler ı gibi kodlanmasın, okunaklı kalsın
     metin = json.dumps(veri, ensure_ascii=False, indent=2) + "\n"
     # newline="\n": Windows'ta da Linux'ta da aynı dosya çıksın
@@ -270,7 +327,7 @@ def main():
     # 4) Değişiklik var: veritabanını ve JSON'u güncelle
     simdi = datetime.now(TURKIYE_SAATI).isoformat(timespec="seconds")
     veritabanini_guncelle(kesintiler, simdi)
-    json_yaz(kesintiler, simdi)
+    json_yaz(kesintiler, gecmisi_oku(), simdi)
     print("Liste değişti: kesintiler.db ve kesintiler.json güncellendi.")
 
 
