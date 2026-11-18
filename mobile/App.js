@@ -19,6 +19,9 @@ const JSON_ADRESI =
 // Seçilen ilçenin telefonda saklandığı anahtar
 const ILCE_ANAHTARI = 'secilenIlce';
 
+// Son açılışta görülen kesintilerin id'lerinin saklandığı anahtar ("YENİ" etiketi için)
+const GORULEN_ANAHTARI = 'gorulenKesintiler';
+
 // "Tümü" ve Ankara'nın 25 ilçesi. Yazılış, scraper'ın ürettiği
 // ilçe adlarıyla (Türkçe büyük harf) birebir aynı olmalı.
 const ILCELER = [
@@ -44,11 +47,14 @@ function tarihYaz(iso) {
   return `${gun}.${ay}.${yil} ${saat.slice(0, 5)}`;
 }
 
-// Tek bir kesintiyi gösteren kart
-function KesintiKarti({ kesinti }) {
+// Tek bir kesintiyi gösteren kart. "yeni" doğruysa ilçe adının yanında etiket çıkar.
+function KesintiKarti({ kesinti, yeni }) {
   return (
     <View style={styles.kart}>
-      <Text style={styles.kartIlce}>{kesinti.ilce}</Text>
+      <View style={styles.kartUst}>
+        <Text style={styles.kartIlce}>{kesinti.ilce}</Text>
+        {yeni && <Text style={styles.yeniEtiketi}>YENİ</Text>}
+      </View>
       <Text style={styles.kartKaynak}>{kesinti.kaynak}</Text>
 
       <View style={styles.saatSatiri}>
@@ -72,7 +78,10 @@ function KesintiKarti({ kesinti }) {
 }
 
 export default function App() {
-  const [kesintiler, setKesintiler] = useState([]);
+  const [kesintiler, setKesintiler] = useState([]); // şu an süren kesintiler
+  const [gecmis, setGecmis] = useState([]); // son 30 günde biten kesintiler
+  const [sekme, setSekme] = useState('simdi'); // 'simdi' ya da 'gecmis'
+  const [yeniIdler, setYeniIdler] = useState([]); // son açılıştan beri çıkanlar
   const [guncelleme, setGuncelleme] = useState(null);
   const [yukleniyor, setYukleniyor] = useState(true); // ilk açılış
   const [yenileniyor, setYenileniyor] = useState(false); // aşağı çekme
@@ -90,10 +99,32 @@ export default function App() {
       const veri = await yanit.json();
       if (!Array.isArray(veri.kesintiler)) throw new Error('Beklenmeyen veri');
       setKesintiler(veri.kesintiler);
+      // Eski biçimdeki dosyada geçmiş olmayabilir; o zaman boş liste
+      setGecmis(Array.isArray(veri.gecmis) ? veri.gecmis : []);
       setGuncelleme(veri.guncelleme);
       setHata(false);
+      await yenileriIsaretle(veri.kesintiler);
     } catch (e) {
       setHata(true);
+    }
+  }
+
+  // Son açılıştan beri çıkan kesintileri bulur ve "YENİ" diye işaretler.
+  // Telefonda, en son görülen kesintilerin id listesini saklıyoruz; bu listede
+  // olmayan her kesinti yenidir. Etiket uygulama kapanana kadar kalır.
+  async function yenileriIsaretle(liste) {
+    const idler = liste.map((kesinti) => kesinti.id);
+    try {
+      const kayitli = await AsyncStorage.getItem(GORULEN_ANAHTARI);
+      // Uygulama ilk kez açılıyorsa kayıt yoktur; o zaman her şey "yeni" görünmesin
+      if (kayitli !== null) {
+        const gorulenler = JSON.parse(kayitli);
+        const yeniler = idler.filter((id) => !gorulenler.includes(id));
+        setYeniIdler((onceki) => [...onceki, ...yeniler]);
+      }
+      await AsyncStorage.setItem(GORULEN_ANAHTARI, JSON.stringify(idler));
+    } catch (e) {
+      // Telefon hafızası okunamazsa sadece etiket çıkmaz, uygulama çalışmaya devam eder
     }
   }
 
@@ -129,10 +160,26 @@ export default function App() {
     AsyncStorage.setItem(ILCE_ANAHTARI, ilce).catch(() => {});
   }
 
-  const gosterilenler =
-    secilenIlce === 'Tümü'
-      ? kesintiler
-      : kesintiler.filter((kesinti) => kesinti.ilce === secilenIlce);
+  // Seçili ilçeye göre süzülmüş listeler
+  function ilceyeGore(liste) {
+    return secilenIlce === 'Tümü'
+      ? liste
+      : liste.filter((kesinti) => kesinti.ilce === secilenIlce);
+  }
+  const suAnkiler = ilceyeGore(kesintiler);
+  const bitenler = ilceyeGore(gecmis);
+  const gosterilenler = sekme === 'simdi' ? suAnkiler : bitenler;
+
+  // Boş listede gösterilecek mesaj
+  let bosMesaj;
+  if (sekme === 'simdi') {
+    bosMesaj = secilenIlce === 'Tümü' ? 'Şu an kesinti yok' : 'Bu ilçede kesinti yok';
+  } else {
+    bosMesaj =
+      secilenIlce === 'Tümü'
+        ? 'Son 30 günde biten kesinti yok'
+        : 'Bu ilçede son 30 günde biten kesinti yok';
+  }
 
   // Ekranın alt kısmı duruma göre değişir: yükleniyor / hata / liste
   let icerik;
@@ -158,15 +205,18 @@ export default function App() {
       <FlatList
         data={gosterilenler}
         keyExtractor={(kesinti) => kesinti.id}
-        renderItem={({ item }) => <KesintiKarti kesinti={item} />}
+        renderItem={({ item }) => (
+          <KesintiKarti
+            kesinti={item}
+            yeni={sekme === 'simdi' && yeniIdler.includes(item.id)}
+          />
+        )}
         contentContainerStyle={styles.liste}
         refreshing={yenileniyor}
         onRefresh={yenile}
         ListEmptyComponent={
           <View style={styles.orta}>
-            <Text style={styles.ortaBaslik}>
-              {secilenIlce === 'Tümü' ? 'Şu an kesinti yok' : 'Bu ilçede kesinti yok'}
-            </Text>
+            <Text style={styles.ortaBaslik}>{bosMesaj}</Text>
             <Text style={styles.ortaMetin}>Yenilemek için aşağı çek.</Text>
           </View>
         }
@@ -188,6 +238,26 @@ export default function App() {
         <Text style={styles.guncelleme}>
           Liste son değişti: {guncelleme ? tarihYaz(guncelleme) : '-'}
         </Text>
+
+        {/* Şu an / Geçmiş seçimi; parantez içinde seçili ilçedeki sayı */}
+        <View style={styles.sekmeler}>
+          <Pressable
+            style={[styles.sekme, sekme === 'simdi' && styles.sekmeSecili]}
+            onPress={() => setSekme('simdi')}
+          >
+            <Text style={sekme === 'simdi' ? styles.sekmeYaziSecili : styles.sekmeYazi}>
+              Şu an ({suAnkiler.length})
+            </Text>
+          </Pressable>
+          <Pressable
+            style={[styles.sekme, sekme === 'gecmis' && styles.sekmeSecili]}
+            onPress={() => setSekme('gecmis')}
+          >
+            <Text style={sekme === 'gecmis' ? styles.sekmeYaziSecili : styles.sekmeYazi}>
+              Geçmiş ({bitenler.length})
+            </Text>
+          </Pressable>
+        </View>
       </View>
 
       {icerik}
@@ -238,6 +308,17 @@ const styles = StyleSheet.create({
   },
   ilceButonuYazi: { fontSize: 16, color: '#1a1a1a' },
   guncelleme: { color: '#dbe8f6', fontSize: 13, marginTop: 10 },
+  sekmeler: {
+    flexDirection: 'row',
+    marginTop: 12,
+    backgroundColor: '#094c8f',
+    borderRadius: 8,
+    padding: 3,
+  },
+  sekme: { flex: 1, paddingVertical: 8, borderRadius: 6, alignItems: 'center' },
+  sekmeSecili: { backgroundColor: '#fff' },
+  sekmeYazi: { color: '#dbe8f6', fontSize: 15 },
+  sekmeYaziSecili: { color: '#0b5cab', fontSize: 15, fontWeight: 'bold' },
 
   // Liste ve kartlar
   liste: { padding: 16, paddingBottom: 40, flexGrow: 1 },
@@ -249,7 +330,19 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#e1e5ea',
   },
+  kartUst: { flexDirection: 'row', alignItems: 'center' },
   kartIlce: { fontSize: 20, fontWeight: 'bold', color: '#0b5cab' },
+  yeniEtiketi: {
+    marginLeft: 8,
+    backgroundColor: '#d92d20',
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: 'bold',
+    paddingHorizontal: 7,
+    paddingVertical: 2,
+    borderRadius: 4,
+    overflow: 'hidden', // iOS'ta köşe yuvarlaması yazıda da görünsün diye
+  },
   kartKaynak: { fontSize: 14, color: '#5b6470', marginTop: 2 },
   saatSatiri: { flexDirection: 'row', marginTop: 4 },
   saatKutusu: { flex: 1 },
