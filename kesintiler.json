@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-18T00:13:51+03:00",
+  "guncelleme": "2026-11-18T13:11:58+03:00",
   "kesintiler": [
     {
       "id": "1b61722a8525fff8",
@@ -15,9 +15,36 @@
       "ilce": "YENİMAHALLE",
       "kaynak": "Arıza Kaynaklı",
       "ariza_tarihi": "2026-11-17T20:15:00",
-      "tamir_tarihi": "2026-11-18T14:00:00",
+      "tamir_tarihi": "2026-11-18T17:00:00",
       "detay": "Yakacık Mahallesindeki 200lük duktil boru deplase ( altyapı ) çalışması sebebiyle plansız su kesintisi yapılmıştır.Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.",
-      "etkilenen_yerler": "Yakacık mahallesi alt kotları"
+      "etkilenen_yerler": "Yakacık mahallesi alt kotları , 3586 cadde ve civar"
+    },
+    {
+      "id": "2383a14735886bd6",
+      "ilce": "MAMAK",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-18T08:50:00",
+      "tamir_tarihi": "2026-11-18T16:00:00",
+      "detay": "Değerli abonelerimiz, Şahap Gürler mahallesi 1242/1sokak içerinde Q100 lük içme suyu hattı arızası nedeniyle,18 Kasım.2026 saat-08:40 ile 18 Kasım.2026 saat-16 :00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "ŞAHAPGÜRLER MAHALLESİ"
+    },
+    {
+      "id": "145e2fe9a9dd9b0e",
+      "ilce": "GÖLBAŞI",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-18T10:15:00",
+      "tamir_tarihi": "2026-11-18T15:00:00",
+      "detay": "Değerli abonelerimiz, Yaylabağ Mahallesi Yaylabağ Caddesi üzerinde 160’lık içme suyu hattında yapılacak olan arıza çalışması nedeniyle su kesintisi yapılmıştır.",
+      "etkilenen_yerler": "Yaylabağ Mahallesine"
+    },
+    {
+      "id": "65be8512c5274fb5",
+      "ilce": "NALLIHAN",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-18T12:25:00",
+      "tamir_tarihi": "2026-11-18T18:00:00",
+      "detay": "Nallıhan ilçesi Sarıyar mahallesi içme suyu deposuna su sağlayan sondaj kuyusunda motor arızasından kaynaklı plansız su kesintisi yapılmaktadır.",
+      "etkilenen_yerler": "Sarıyar mahallesi geneli"
     },
     {
       "id": "9aaa118769916b62",
