@@ -2,7 +2,9 @@ name: ASKİ kesintilerini çek
 
 on:
   schedule:
-    - cron: "*/15 * * * *" # 15 dakikada bir
+    # 15 dakikada bir. Saat başı ve çeyrek başı (0, 15, 30, 45) GitHub'da en
+    # kalabalık dakikalar, çalışmalar gecikip atlanıyor; o yüzden kaydırdık.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch: # Actions sekmesinden elle çalıştırabilmek için
   push: # scraper ya da bu dosya değişince hemen dene
     paths:
