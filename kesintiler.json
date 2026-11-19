@@ -1,15 +1,6 @@
 {
-  "guncelleme": "2026-11-19T11:35:28+03:00",
+  "guncelleme": "2026-11-19T20:36:34+03:00",
   "kesintiler": [
-    {
-      "id": "b551ff12301faad7",
-      "ilce": "ÇUBUK",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-19T10:40:00",
-      "tamir_tarihi": "2026-11-19T16:30:00",
-      "detay": "Değerli abonelerimiz, Çubuk İlçesi Atatürk Mahallesi Damla Sokakta bulunan içmesuyu hattında oluşan arıza nedeniyle 10:40 ile 16:30 saatleri arasında plansız su kesintisi yapılacaktır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
-      "etkilenen_yerler": "Atatürk Mahallesi Geneli"
-    },
     {
       "id": "9aaa118769916b62",
       "ilce": "KEÇİÖREN",
@@ -30,6 +21,15 @@
     }
   ],
   "gecmis": [
+    {
+      "id": "b551ff12301faad7",
+      "ilce": "ÇUBUK",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-19T10:40:00",
+      "tamir_tarihi": "2026-11-19T16:30:00",
+      "detay": "Değerli abonelerimiz, Çubuk İlçesi Atatürk Mahallesi Damla Sokakta bulunan içmesuyu hattında oluşan arıza nedeniyle 10:40 ile 16:30 saatleri arasında plansız su kesintisi yapılacaktır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Atatürk Mahallesi Geneli"
+    },
     {
       "id": "38aa11abac8940e5",
       "ilce": "YENİMAHALLE",
