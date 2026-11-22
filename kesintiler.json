@@ -1,15 +1,17 @@
 {
-  "guncelleme": "2026-11-22T12:49:57+03:00",
+  "guncelleme": "2026-11-23T01:43:19+03:00",
   "kesintiler": [
     {
-      "id": "01e70bf3b451879c",
-      "ilce": "SİNCAN",
+      "id": "e56bcff9f87b4beb",
+      "ilce": "MAMAK",
       "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-22T08:10:00",
-      "tamir_tarihi": "2026-11-22T17:00:00",
-      "detay": "Saraycık mh 1651 cd 4.bölge 1.etap 1.kısım içerisinde Ø110' lük şebeke arızadan kaynaklı plansız su kesintisi yapılmaktadır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
-      "etkilenen_yerler": "Saraycık mh Toki konutları 4.bölge 1.etap 1.kısım"
-    },
+      "ariza_tarihi": "2026-11-22T20:40:00",
+      "tamir_tarihi": "2026-11-23T02:00:00",
+      "detay": "Değerli abonelerimiz,Akdere mahallesi 382 sokak içerinde Q150 lik içme suyu hattı arızası nedeniyle,22 Kasım.2026 saat-20:40 ile 23 Kasım.2026 saat-02:00 saatleri arasında su verilemeyecektir. Etkilenen yerler ; Akdere mahallesi, Kazım Orbay, Şehit Cengiz Topel mahallesi, Peyami Sefa mahallerin üst kotları Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Etkilenen yerler ; Akdere mahallesi, Kazım Orbay, Şehit Cengiz Topel mahallesi, Peyami Sefa mahallerin üst kotları"
+    }
+  ],
+  "gecmis": [
     {
       "id": "a4bb6a7de52a6ad7",
       "ilce": "ETİMESGUT",
@@ -27,9 +29,16 @@
       "tamir_tarihi": "2026-11-22T17:00:00",
       "detay": "Değerli abonelerimiz, Dağyaka mah 614 cadde üzerinde 700 lük içme suyu ana iletim hattı üzerinde Deplase bağlantı çalışması sebebi ile 22.11.2026 saat 09:00 22 .11.2026 17.00 saatleri arasında planlı su kesintisi yapılacaktır . Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmayı aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
       "etkilenen_yerler": "SARAY , ORHANİYE VE DAĞYAKA MAH ÇANİÇİ CADDESİ, ATOM CADDESİ, DAĞYAKA CADDESİ 614 CAD 688 CADDE ,GİMAT CADDESİ ,115 CADDE YE. BAĞLI CADDE VE SOKAKLAR"
-    }
-  ],
-  "gecmis": [
+    },
+    {
+      "id": "01e70bf3b451879c",
+      "ilce": "SİNCAN",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-22T08:10:00",
+      "tamir_tarihi": "2026-11-22T17:00:00",
+      "detay": "Saraycık mh 1651 cd 4.bölge 1.etap 1.kısım içerisinde Ø110' lük şebeke arızadan kaynaklı plansız su kesintisi yapılmaktadır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Saraycık mh Toki konutları 4.bölge 1.etap 1.kısım"
+    },
     {
       "id": "44942117f12f4a49",
       "ilce": "NALLIHAN",
