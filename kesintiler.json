@@ -1,6 +1,24 @@
 {
-  "guncelleme": "2026-11-22T01:11:57+03:00",
+  "guncelleme": "2026-11-22T12:49:57+03:00",
   "kesintiler": [
+    {
+      "id": "01e70bf3b451879c",
+      "ilce": "SİNCAN",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-22T08:10:00",
+      "tamir_tarihi": "2026-11-22T17:00:00",
+      "detay": "Saraycık mh 1651 cd 4.bölge 1.etap 1.kısım içerisinde Ø110' lük şebeke arızadan kaynaklı plansız su kesintisi yapılmaktadır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Saraycık mh Toki konutları 4.bölge 1.etap 1.kısım"
+    },
+    {
+      "id": "a4bb6a7de52a6ad7",
+      "ilce": "ETİMESGUT",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-22T09:40:00",
+      "tamir_tarihi": "2026-11-22T17:00:00",
+      "detay": "Değerli abonelerimiz, Etimesgut İlçesi Bahçekapı Mahallesi Sanayi Bulvarı ile 2470 Cadde kesişimin de Ø100 dağıtım şebeke hattında oluşan arızadan kaynaklı 09:40 ile 17:00 saatleri arasında plansız su kesintisi yapılmıştır. Su arızasını en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Bahçekapı Mahallesi ve Jandarma Lojmanları"
+    },
     {
       "id": "bdd28edb89dd2a14",
       "ilce": "KAZAN",
