@@ -1,6 +1,35 @@
 {
-  "guncelleme": "2026-11-24T13:27:49+03:00",
+  "guncelleme": "2026-11-24T23:48:31+03:00",
   "kesintiler": [
+    {
+      "id": "f7f0ed072aebc4c1",
+      "ilce": "MAMAK",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-25T05:00:00",
+      "tamir_tarihi": "2026-11-26T09:00:00",
+      "detay": "Mamak-Dikimevi Metro Hattı çalışmaları kapsamında, Fahri Korutürk Metro Durağı inşaat alanında gerçekleştirilecek içme suyu hattı deplase bağlantı çalışmaları nedeni ile planlı su kesintisi yaşanacaktır.25 Kasım 2026 Çarşamba günü saat 05.00’ten itibaren su kesintisi uygulanacaktır. Çalışmaların 25 Kasım Çarşamba günü saat 17.00’de tamamlanması, yüksek kotlu bölgelere suyun ulaşmasının ise 26 Kasım Perşembe günü saat 09.00’u bulması öngörülmektedir. Vereceğimiz rahatsızlıktan dolayı özür dileriz.",
+      "etkilenen_yerler": "Fahri Korutürk , Durali Alıç , Şahintepe , Şirintepe , Tuzluçayır , Ege , Mutlu , Kutlu , Genaral Zeki Doğan , Cengizhan , Akşemsettin , Boğaziçi , Zirvekent , Misket Mahalleleri"
+    },
+    {
+      "id": "9f0b501e23e426a4",
+      "ilce": "ÇANKAYA",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-25T05:00:00",
+      "tamir_tarihi": "2026-11-26T09:00:00",
+      "detay": "Mamak-Dikimevi Metro Hattı çalışmaları kapsamında, Fahri Korutürk Metro Durağı inşaat alanında gerçekleştirilecek içme suyu hattı deplase bağlantı çalışmaları nedeni ile planlı su kesintisi yaşanacaktır.25 Kasım 2026 Çarşamba günü saat 05.00’ten itibaren su kesintisi uygulanacaktır. Çalışmaların 25 Kasım Çarşamba günü saat 17.00’de tamamlanması, yüksek kotlu bölgelere suyun ulaşmasının ise 26 Kasım Perşembe günü saat 09.00’u bulması öngörülmektedir. Vereceğimiz rahatsızlıktan dolayı özür dileriz.",
+      "etkilenen_yerler": "Yakupabdal Mahallesi"
+    }
+  ],
+  "gecmis": [
+    {
+      "id": "be046abb6443f000",
+      "ilce": "ÇANKAYA",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-24T12:45:00",
+      "tamir_tarihi": "2026-11-24T17:00:00",
+      "detay": "Değerli abonelerimiz,Yukarı Dikmen mahallesi,Turan Güneş Bulvarı içi ,100'lük içme suyu hattı arıza çalışması nedeniyle 24 Kasım 2026 saat 12:45 ile 24 Kasım 2026 saat 17:00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Yukarı Dikmen mahallesi ,Oran mahallesi bir kısmı, İlkbahar mahallesi bir kısmı,Dumlupınar mahallesi bir kısmı"
+    },
     {
       "id": "fa2f3ce6baa428ac",
       "ilce": "SİNCAN",
@@ -10,17 +39,6 @@
       "detay": "Mustafa Kemal Mahallesi 12.CD içerisinde üçüncü şahıslar tarafından 110'luk içme suyu şebeke hattına zarar verilmiştir; plansız su kesintisi yapılmaktadır. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
       "etkilenen_yerler": "Mustafa Kemal Mahallesi'nin bir kısmı"
     },
-    {
-      "id": "be046abb6443f000",
-      "ilce": "ÇANKAYA",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-24T12:45:00",
-      "tamir_tarihi": "2026-11-24T17:00:00",
-      "detay": "Değerli abonelerimiz,Yukarı Dikmen mahallesi,Turan Güneş Bulvarı içi ,100'lük içme suyu hattı arıza çalışması nedeniyle 24 Kasım 2026 saat 12:45 ile 24 Kasım 2026 saat 17:00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
-      "etkilenen_yerler": "Yukarı Dikmen mahallesi ,Oran mahallesi bir kısmı, İlkbahar mahallesi bir kısmı,Dumlupınar mahallesi bir kısmı"
-    }
-  ],
-  "gecmis": [
     {
       "id": "6c7931dc5d90a9c1",
       "ilce": "SİNCAN",
