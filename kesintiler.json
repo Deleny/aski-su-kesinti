@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-24T23:48:31+03:00",
+  "guncelleme": "2026-11-25T16:33:53+03:00",
   "kesintiler": [
     {
       "id": "f7f0ed072aebc4c1",
@@ -18,6 +18,60 @@
       "tamir_tarihi": "2026-11-26T09:00:00",
       "detay": "Mamak-Dikimevi Metro Hattı çalışmaları kapsamında, Fahri Korutürk Metro Durağı inşaat alanında gerçekleştirilecek içme suyu hattı deplase bağlantı çalışmaları nedeni ile planlı su kesintisi yaşanacaktır.25 Kasım 2026 Çarşamba günü saat 05.00’ten itibaren su kesintisi uygulanacaktır. Çalışmaların 25 Kasım Çarşamba günü saat 17.00’de tamamlanması, yüksek kotlu bölgelere suyun ulaşmasının ise 26 Kasım Perşembe günü saat 09.00’u bulması öngörülmektedir. Vereceğimiz rahatsızlıktan dolayı özür dileriz.",
       "etkilenen_yerler": "Yakupabdal Mahallesi"
+    },
+    {
+      "id": "6bcb4ea2dff7f460",
+      "ilce": "ÇAMLIDERE",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-25T09:00:00",
+      "tamir_tarihi": "2026-11-26T17:00:00",
+      "detay": "Yediören terfi istasyonu ana ishale hattı Ç=225mm hatta oluşan arıza nedeniyle su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür dileriz.",
+      "etkilenen_yerler": "Yediören Mahallesi, Peçenek Mahallesi, Yoncatepe Mahallesi."
+    },
+    {
+      "id": "491cea8cdcb226dd",
+      "ilce": "YENİMAHALLE",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-25T09:20:00",
+      "tamir_tarihi": "2026-11-25T17:00:00",
+      "detay": "Yakacık Mahallesi 3576 cadde içerisinde bulunan peØ200 lük boruda oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.",
+      "etkilenen_yerler": "Yakacık mahallesi 3585 cadde Bağlar Mevki 3576 cadde ve civarı."
+    },
+    {
+      "id": "d68411e32193c564",
+      "ilce": "ÇANKAYA",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-25T09:40:00",
+      "tamir_tarihi": "2026-11-25T18:00:00",
+      "detay": "Değerli abonelerimiz, Yaşamkent mahallesi,3342 sokak içerisinde ,300'lük içme suyu hattı arıza çalışması nedeniyle, 25 Kasım 2026 saat 09:40 ile 25 Kasım 2026 saat 18:00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Yaşamkent mahallesi tamamı, Konutkent mahallesi bir kısmı, Dodurga mahallesi üst kotları, Alacaatlı mahallesi bir kısmı, Koru mahallesi bir kısmı"
+    },
+    {
+      "id": "ac46a00095e32f15",
+      "ilce": "AKYURT",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-26T09:00:00",
+      "tamir_tarihi": "2026-11-26T15:00:00",
+      "detay": "Büğdüz Mahallesi Akkent Sitesi içerisinde Yeni Hat çalışması yapılacağından 26.11.2026 saat 09:00 ile 26.11.2026 saat 15:00 arasında su kesintisi uygulanacaktır.Verdiğimiz rahatsızlıktan dolayı özür diler sabır ve anlayışınız için teşekkür ederiz.",
+      "etkilenen_yerler": "Yeşiltepe Mahallesi Toki Blokları ve Büğdüz Mahallesinin bir kısmı"
+    },
+    {
+      "id": "e05dbfbf5207ce2d",
+      "ilce": "ETİMESGUT",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-25T13:10:00",
+      "tamir_tarihi": "2026-11-25T18:00:00",
+      "detay": "Değerli abonelerimiz, Çankaya İlçesi Yaşam kent Mahallesi,3342 Sokak içerisin de Ø 300'lük içme suyu hattı arıza çalışması nedeniyle, 25 Kasım 2026 saat 13:10 ile 25 Kasım 2026 saat 18:00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Fatih Sultan Mahallesi"
+    },
+    {
+      "id": "cd960bf7b3441aba",
+      "ilce": "BEYPAZARI",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-25T14:00:00",
+      "tamir_tarihi": "2026-11-25T17:00:00",
+      "detay": "Değerli abonelerimiz, Gazipaşa Mahallesi Ilıman Kümeevleri Sokak Baş ören yolunda bulunan 110 luk Polietilen Boru hattında oluşan arıza nedeniyle 14:00 ile 17:00 saatleri arasında plansız su kesintisi yapılacaktır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Gazipaşa Mahallesi Ilıman Kümeevleri Sokak ve civarı"
     }
   ],
   "gecmis": [
