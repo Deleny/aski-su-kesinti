@@ -1,33 +1,44 @@
 {
-  "guncelleme": "2026-11-26T01:41:58+03:00",
+  "guncelleme": "2026-11-26T17:08:26+03:00",
   "kesintiler": [
     {
-      "id": "f7f0ed072aebc4c1",
-      "ilce": "MAMAK",
+      "id": "fe87f9eeb0a54844",
+      "ilce": "SİNCAN",
       "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-25T05:00:00",
-      "tamir_tarihi": "2026-11-26T09:00:00",
-      "detay": "Mamak-Dikimevi Metro Hattı çalışmaları kapsamında, Fahri Korutürk Metro Durağı inşaat alanında gerçekleştirilecek içme suyu hattı deplase bağlantı çalışmaları nedeni ile planlı su kesintisi yaşanacaktır.25 Kasım 2026 Çarşamba günü saat 05.00’ten itibaren su kesintisi uygulanacaktır. Çalışmaların 25 Kasım Çarşamba günü saat 17.00’de tamamlanması, yüksek kotlu bölgelere suyun ulaşmasının ise 26 Kasım Perşembe günü saat 09.00’u bulması öngörülmektedir. Vereceğimiz rahatsızlıktan dolayı özür dileriz.",
-      "etkilenen_yerler": "Fahri Korutürk , Durali Alıç , Şahintepe , Şirintepe , Tuzluçayır , Ege , Mutlu , Kutlu , Genaral Zeki Doğan , Cengizhan , Akşemsettin , Boğaziçi , Zirvekent , Misket Mahalleleri"
+      "ariza_tarihi": "2026-11-26T11:45:00",
+      "tamir_tarihi": "2026-11-26T20:00:00",
+      "detay": "Saraycık Mahallesi 2436 CD içerisinde P Ø200 lük hatta yapılacak branşman bağlantı çalışması nedeniyle plansız su kesintisi yapılacaktır. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Saraycık Mahallesinin bir kısmı"
     },
     {
-      "id": "9f0b501e23e426a4",
-      "ilce": "ÇANKAYA",
+      "id": "b7164b0a39f3acc0",
+      "ilce": "AKYURT",
       "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-25T05:00:00",
-      "tamir_tarihi": "2026-11-26T09:00:00",
-      "detay": "Mamak-Dikimevi Metro Hattı çalışmaları kapsamında, Fahri Korutürk Metro Durağı inşaat alanında gerçekleştirilecek içme suyu hattı deplase bağlantı çalışmaları nedeni ile planlı su kesintisi yaşanacaktır.25 Kasım 2026 Çarşamba günü saat 05.00’ten itibaren su kesintisi uygulanacaktır. Çalışmaların 25 Kasım Çarşamba günü saat 17.00’de tamamlanması, yüksek kotlu bölgelere suyun ulaşmasının ise 26 Kasım Perşembe günü saat 09.00’u bulması öngörülmektedir. Vereceğimiz rahatsızlıktan dolayı özür dileriz.",
-      "etkilenen_yerler": "Yakupabdal Mahallesi"
+      "ariza_tarihi": "2026-11-26T14:50:00",
+      "tamir_tarihi": "2026-11-26T18:00:00",
+      "detay": "Saracalar Mahallesi Küme Evleri içerisinde müteahhit firmanın altyapı kazı çalışması sırasında İçme suyu dağıtım şebeke hattımıza zarar verdiğinden 26.11.2026 saat 15:00 ile 26.11.2026 saat 18:00 arasında su kesintisi yaşanacaktır verdiğimiz rahatsızlıktan dolayı özür dileriz.",
+      "etkilenen_yerler": "Saracalar Mahallesi"
     },
     {
-      "id": "6bcb4ea2dff7f460",
-      "ilce": "ÇAMLIDERE",
+      "id": "2e3532ee1fde252f",
+      "ilce": "KEÇİÖREN",
       "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-25T09:00:00",
-      "tamir_tarihi": "2026-11-26T17:00:00",
-      "detay": "Yediören terfi istasyonu ana ishale hattı Ç=225mm hatta oluşan arıza nedeniyle su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür dileriz.",
-      "etkilenen_yerler": "Yediören Mahallesi, Peçenek Mahallesi, Yoncatepe Mahallesi."
+      "ariza_tarihi": "2026-11-26T17:30:00",
+      "tamir_tarihi": "2026-11-26T22:00:00",
+      "detay": "Keçiören İlçesi Hisar Mahallesi Orman sokak içerisinde bulunan Q180'lık polietilen boruda anlık oluşan arıza nedeniyle plansız su kesintisi yapılmaktadır. Su arızasını en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Karakaya mahallesi Kafkas mahallesi Hisar mahallesi"
     },
+    {
+      "id": "2aea3d5c5f7db643",
+      "ilce": "POLATLI",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-26T17:10:00",
+      "tamir_tarihi": "2026-11-26T21:00:00",
+      "detay": "Değerli abonelerimiz Şentepe Mahallesi Yalta Sokak üzerinde bulunan içme suyu dağıtım şebeke hattında Ø 110 mm Pvc boru arızası nedeniyle 17:10 ile 21:00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Şentepe Mahallesi bir bölüm"
+    }
+  ],
+  "gecmis": [
     {
       "id": "ac46a00095e32f15",
       "ilce": "AKYURT",
@@ -36,9 +47,7 @@
       "tamir_tarihi": "2026-11-26T15:00:00",
       "detay": "Büğdüz Mahallesi Akkent Sitesi içerisinde Yeni Hat çalışması yapılacağından 26.11.2026 saat 09:00 ile 26.11.2026 saat 15:00 arasında su kesintisi uygulanacaktır.Verdiğimiz rahatsızlıktan dolayı özür diler sabır ve anlayışınız için teşekkür ederiz.",
       "etkilenen_yerler": "Yeşiltepe Mahallesi Toki Blokları ve Büğdüz Mahallesinin bir kısmı"
-    }
-  ],
-  "gecmis": [
+    },
     {
       "id": "cd960bf7b3441aba",
       "ilce": "BEYPAZARI",
@@ -74,6 +83,33 @@
       "tamir_tarihi": "2026-11-25T17:00:00",
       "detay": "Yakacık Mahallesi 3576 cadde içerisinde bulunan peØ200 lük boruda oluşan arıza nedeniyle plansız su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür diler, Sabır ve anlayışınız için teşekkür ederiz.",
       "etkilenen_yerler": "Yakacık mahallesi 3585 cadde Bağlar Mevki 3576 cadde ve civarı."
+    },
+    {
+      "id": "6bcb4ea2dff7f460",
+      "ilce": "ÇAMLIDERE",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-25T09:00:00",
+      "tamir_tarihi": "2026-11-26T17:00:00",
+      "detay": "Yediören terfi istasyonu ana ishale hattı Ç=225mm hatta oluşan arıza nedeniyle su kesintisi yapılmıştır. Verdiğimiz rahatsızlıktan dolayı özür dileriz.",
+      "etkilenen_yerler": "Yediören Mahallesi, Peçenek Mahallesi, Yoncatepe Mahallesi."
+    },
+    {
+      "id": "f7f0ed072aebc4c1",
+      "ilce": "MAMAK",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-25T05:00:00",
+      "tamir_tarihi": "2026-11-26T09:00:00",
+      "detay": "Mamak-Dikimevi Metro Hattı çalışmaları kapsamında, Fahri Korutürk Metro Durağı inşaat alanında gerçekleştirilecek içme suyu hattı deplase bağlantı çalışmaları nedeni ile planlı su kesintisi yaşanacaktır.25 Kasım 2026 Çarşamba günü saat 05.00’ten itibaren su kesintisi uygulanacaktır. Çalışmaların 25 Kasım Çarşamba günü saat 17.00’de tamamlanması, yüksek kotlu bölgelere suyun ulaşmasının ise 26 Kasım Perşembe günü saat 09.00’u bulması öngörülmektedir. Vereceğimiz rahatsızlıktan dolayı özür dileriz.",
+      "etkilenen_yerler": "Fahri Korutürk , Durali Alıç , Şahintepe , Şirintepe , Tuzluçayır , Ege , Mutlu , Kutlu , Genaral Zeki Doğan , Cengizhan , Akşemsettin , Boğaziçi , Zirvekent , Misket Mahalleleri"
+    },
+    {
+      "id": "9f0b501e23e426a4",
+      "ilce": "ÇANKAYA",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-25T05:00:00",
+      "tamir_tarihi": "2026-11-26T09:00:00",
+      "detay": "Mamak-Dikimevi Metro Hattı çalışmaları kapsamında, Fahri Korutürk Metro Durağı inşaat alanında gerçekleştirilecek içme suyu hattı deplase bağlantı çalışmaları nedeni ile planlı su kesintisi yaşanacaktır.25 Kasım 2026 Çarşamba günü saat 05.00’ten itibaren su kesintisi uygulanacaktır. Çalışmaların 25 Kasım Çarşamba günü saat 17.00’de tamamlanması, yüksek kotlu bölgelere suyun ulaşmasının ise 26 Kasım Perşembe günü saat 09.00’u bulması öngörülmektedir. Vereceğimiz rahatsızlıktan dolayı özür dileriz.",
+      "etkilenen_yerler": "Yakupabdal Mahallesi"
     },
     {
       "id": "be046abb6443f000",
