@@ -2,6 +2,8 @@
 
 Ankara'daki su kesintilerini ASKİ'nin sitesinden otomatik okuyup telefonda ve web sayfasında ilçe ilçe gösteren basit bir sistem.
 
+**Web sayfası:** https://aski-su-kesinti-gkelvphc3kzhf9vuk6lk2t.streamlit.app/
+
 ## Mimari
 
 ```
