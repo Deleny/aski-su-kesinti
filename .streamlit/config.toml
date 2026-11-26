@@ -1,0 +1,11 @@
+# Web sayfasının (web/app.py) renk ayarları; mobil uygulamadaki maviyle aynı.
+# Streamlit Cloud bu dosyanın repo kökünde durmasını istiyor.
+[theme]
+base = "light"
+primaryColor = "#0b5cab"
+backgroundColor = "#f2f4f7"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#1a1a1a"
+
+[client]
+toolbarMode = "minimal"   # sağ üstteki "Deploy" tuşunu gizler

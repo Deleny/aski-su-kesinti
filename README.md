@@ -1,6 +1,6 @@
 # ASKİ Su Kesintileri
 
-Ankara'daki su kesintilerini ASKİ'nin sitesinden otomatik okuyup telefonda ilçe ilçe gösteren basit bir sistem.
+Ankara'daki su kesintilerini ASKİ'nin sitesinden otomatik okuyup telefonda ve web sayfasında ilçe ilçe gösteren basit bir sistem.
 
 ## Mimari
 
@@ -16,8 +16,8 @@ ASKİ sayfası (www.aski.gov.tr/tr/Kesinti.aspx)
         ▼
 raw.githubusercontent.com/Deleny/aski-su-kesinti/main/kesintiler.json
         │
-        ▼
-   Expo uygulaması (mobile/App.js) okur ve gösterir
+        ├──► Expo uygulaması (mobile/App.js) okur ve gösterir
+        └──► Streamlit web sayfası (web/app.py) okur ve gösterir
 ```
 
 Sunucu yok, API yok: GitHub hem zamanlayıcı hem de dosya sunucusu görevini görüyor.
@@ -29,6 +29,9 @@ Sunucu yok, API yok: GitHub hem zamanlayıcı hem de dosya sunucusu görevini g�
 | `kesintiler.json` | `{"guncelleme": "...", "kesintiler": [...], "gecmis": [...]}`. `gecmis`, veritabanındaki son 30 günün biten kesintileri. |
 | `.github/workflows/scrape.yml` | Scraper'ı çalıştırır, değişiklik varsa commit edip push eder. |
 | `mobile/App.js` | Uygulamanın tamamı: ilçe seçimi, "Şu an / Geçmiş" sekmeleri, son açılıştan beri çıkan kesintilerde "YENİ" etiketi. JSON adresi dosyanın en üstünde. |
+| `web/app.py` | Web sayfası (Streamlit): ilçe seçimi, "Şu an / Geçmiş" sekmeleri, yenile butonu. Seçilen ilçe adres çubuğunda (`?ilce=MAMAK`) tutulur. |
+| `web/requirements.txt` | Web sayfasının paketleri. Kökteki `requirements.txt`'den ayrı, böylece bot her çalışmada Streamlit kurmaz. |
+| `.streamlit/config.toml` | Web sayfasının renkleri. Streamlit Cloud bu dosyanın kökte olmasını istiyor. |
 
 ## Nasıl çalıştırılır
 
@@ -56,6 +59,17 @@ npx expo start
 
 Telefona Expo Go'yu kur, terminaldeki QR kodu okut (iPhone'da Kamera uygulamasıyla). Telefon ve bilgisayar aynı ağda olmalı.
 
+**Web sayfası (bilgisayarda):**
+
+```bash
+.\venv\Scripts\pip install -r web\requirements.txt
+.\venv\Scripts\streamlit run web\app.py
+```
+
+Tarayıcıda `http://localhost:8501` açılır.
+
+**Web sayfasını internete koymak (Streamlit Community Cloud, ücretsiz):** share.streamlit.io'ya GitHub hesabıyla gir → Create app → repo `Deleny/aski-su-kesinti`, branch `main`, dosya `web/app.py` → Deploy. Bot JSON'u güncelledikçe sayfa da en geç 5 dakika içinde yeni veriyi gösterir; yeniden deploy gerekmez.
+
 **Android APK:**
 
 ```bash
@@ -75,7 +89,8 @@ Yoksa push "rejected" hatasıyla reddedilir.
 
 ## Bilinen sınırlar
 
-- **Veri gecikmeli.** Hedef 15-20 dakikalık gecikme. Ama GitHub zamanlanmış çalışmaları yoğunlukta geciktirip atlayabiliyor: ilk üç günde workflow ortalama 7 saatte bir çalıştı. Üstüne raw.githubusercontent.com dosyayı yaklaşık 5 dakika önbellekte tutuyor.
+- **Veri gecikmeli.** Hedef 15-20 dakikalık gecikme. Ama GitHub zamanlanmış çalışmaları yoğunlukta geciktirip atlayabiliyor: workflow genelde 7 saatte bir çalışıyor; cron dakikalarını kalabalık olmayan dakikalara kaydırmak da düzeltmedi. Üstüne raw.githubusercontent.com dosyayı yaklaşık 5 dakika, web sayfası da 5 dakika önbellekte tutuyor.
+- **Web sayfası uykuya geçebilir.** Streamlit Cloud'un ücretsiz planı, bir süre kimse açmayan sayfayı uyutur; açan kişi "uyandır" butonuna basıp yaklaşık bir dakika bekler. Web sayfasında "YENİ" etiketi yok, çünkü sayfa ziyaretçinin en son neyi gördüğünü hatırlamıyor.
 - **Bildirim yok.** Uygulamayı açıp bakmak gerekir; açınca son açılıştan beri çıkan kesintiler "YENİ" diye işaretlenir. Gerçek push bildirimi Expo Go'da çalışmıyor; iPhone için ücretli Apple Developer üyeliği, ayrıca telefonların bildirim adreslerini tutacak internette bir veritabanı gerekir.
 - **ASKİ sayfa yapısını değiştirirse scraper güncellenmeli.** Bu durumda Actions'taki çalışmalar kırmızı olur ve dosyalar eski hâliyle kalır.
 - **Okunamayan tek bir kart atlanır.** Actions'ta uyarı olarak görünür, o kesinti uygulamada çıkmaz.
