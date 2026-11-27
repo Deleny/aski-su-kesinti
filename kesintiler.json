@@ -1,24 +1,17 @@
 {
-  "guncelleme": "2026-11-26T17:08:26+03:00",
+  "guncelleme": "2026-11-27T17:51:27+03:00",
   "kesintiler": [
     {
-      "id": "fe87f9eeb0a54844",
-      "ilce": "SİNCAN",
+      "id": "6c29a90b068caa19",
+      "ilce": "BEYPAZARI",
       "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-26T11:45:00",
-      "tamir_tarihi": "2026-11-26T20:00:00",
-      "detay": "Saraycık Mahallesi 2436 CD içerisinde P Ø200 lük hatta yapılacak branşman bağlantı çalışması nedeniyle plansız su kesintisi yapılacaktır. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
-      "etkilenen_yerler": "Saraycık Mahallesinin bir kısmı"
-    },
-    {
-      "id": "b7164b0a39f3acc0",
-      "ilce": "AKYURT",
-      "kaynak": "Arıza Kaynaklı",
-      "ariza_tarihi": "2026-11-26T14:50:00",
-      "tamir_tarihi": "2026-11-26T18:00:00",
-      "detay": "Saracalar Mahallesi Küme Evleri içerisinde müteahhit firmanın altyapı kazı çalışması sırasında İçme suyu dağıtım şebeke hattımıza zarar verdiğinden 26.11.2026 saat 15:00 ile 26.11.2026 saat 18:00 arasında su kesintisi yaşanacaktır verdiğimiz rahatsızlıktan dolayı özür dileriz.",
-      "etkilenen_yerler": "Saracalar Mahallesi"
-    },
+      "ariza_tarihi": "2026-11-27T10:05:00",
+      "tamir_tarihi": "2026-11-27T20:00:00",
+      "detay": "Değerli abonelerimiz, Ayvaşık Mahallesi M.Cengiz ÖZALP Caddesi bulunan 110 luk Polietilen Boru hattında oluşan arıza nedeniyle 10:00 ile 20:00 saatleri arasında plansız su kesintisi yapılacaktır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Ayvaşık Mahallesi M.Cengiz ÖZALP Caddesi ve civarı"
+    }
+  ],
+  "gecmis": [
     {
       "id": "2e3532ee1fde252f",
       "ilce": "KEÇİÖREN",
@@ -36,9 +29,25 @@
       "tamir_tarihi": "2026-11-26T21:00:00",
       "detay": "Değerli abonelerimiz Şentepe Mahallesi Yalta Sokak üzerinde bulunan içme suyu dağıtım şebeke hattında Ø 110 mm Pvc boru arızası nedeniyle 17:10 ile 21:00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
       "etkilenen_yerler": "Şentepe Mahallesi bir bölüm"
-    }
-  ],
-  "gecmis": [
+    },
+    {
+      "id": "b7164b0a39f3acc0",
+      "ilce": "AKYURT",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-26T14:50:00",
+      "tamir_tarihi": "2026-11-26T18:00:00",
+      "detay": "Saracalar Mahallesi Küme Evleri içerisinde müteahhit firmanın altyapı kazı çalışması sırasında İçme suyu dağıtım şebeke hattımıza zarar verdiğinden 26.11.2026 saat 15:00 ile 26.11.2026 saat 18:00 arasında su kesintisi yaşanacaktır verdiğimiz rahatsızlıktan dolayı özür dileriz.",
+      "etkilenen_yerler": "Saracalar Mahallesi"
+    },
+    {
+      "id": "fe87f9eeb0a54844",
+      "ilce": "SİNCAN",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-26T11:45:00",
+      "tamir_tarihi": "2026-11-26T20:00:00",
+      "detay": "Saraycık Mahallesi 2436 CD içerisinde P Ø200 lük hatta yapılacak branşman bağlantı çalışması nedeniyle plansız su kesintisi yapılacaktır. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Saraycık Mahallesinin bir kısmı"
+    },
     {
       "id": "ac46a00095e32f15",
       "ilce": "AKYURT",
