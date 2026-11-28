@@ -1,6 +1,35 @@
 {
-  "guncelleme": "2026-11-27T17:51:27+03:00",
+  "guncelleme": "2026-11-28T16:40:23+03:00",
   "kesintiler": [
+    {
+      "id": "e28d781317d5b46c",
+      "ilce": "POLATLI",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-28T14:00:00",
+      "tamir_tarihi": "2026-11-28T17:00:00",
+      "detay": "Değerli abonelerimiz Şentepe Mahallesi Şehit Alpaslan Sarıkaya Caddesi üzerinde bulunan içme suyu dağıtım şebeke hattında 3.cü Şahışlardan kaynaklanan Ø 110 mm Pvc boru arızası nedeniyle 14:00 ile 17:00 saatleri arasında su verilemeyecektir. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
+      "etkilenen_yerler": "Şentepe Mahallesinin bir kısmı"
+    },
+    {
+      "id": "f74c4221ab0b0bed",
+      "ilce": "YENİMAHALLE",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-28T16:05:00",
+      "tamir_tarihi": "2026-11-28T22:00:00",
+      "detay": "Yenimahalle Susuz mahallesi Dempa sanayi sitesi içerisinde bulunan peØ100 lük boru arızası nedeniyle su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür",
+      "etkilenen_yerler": "Dempa sanayi sitesi."
+    },
+    {
+      "id": "22419bff0e55da1c",
+      "ilce": "KAZAN",
+      "kaynak": "Arıza Kaynaklı",
+      "ariza_tarihi": "2026-11-28T16:15:00",
+      "tamir_tarihi": "2026-11-28T22:00:00",
+      "detay": "Yenimahalle Susuz mahallesi Dempa sanayi sitesi içerisinde bulunan peØ100 lük boru arızası nedeniyle su kesintisi yapılmıştır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkürler",
+      "etkilenen_yerler": "Saray mah Keresteciler sanayi sitesi ne baglı cadde ve sokaklar"
+    }
+  ],
+  "gecmis": [
     {
       "id": "6c29a90b068caa19",
       "ilce": "BEYPAZARI",
@@ -9,9 +38,7 @@
       "tamir_tarihi": "2026-11-27T20:00:00",
       "detay": "Değerli abonelerimiz, Ayvaşık Mahallesi M.Cengiz ÖZALP Caddesi bulunan 110 luk Polietilen Boru hattında oluşan arıza nedeniyle 10:00 ile 20:00 saatleri arasında plansız su kesintisi yapılacaktır. Arızayı en hızlı şekilde çözebilmek amacıyla ekiplerimiz sahada çalışmalarını aralıksız sürdürmektedir. Bu süreçte göstereceğiniz anlayış ve destek için teşekkür ederiz.",
       "etkilenen_yerler": "Ayvaşık Mahallesi M.Cengiz ÖZALP Caddesi ve civarı"
-    }
-  ],
-  "gecmis": [
+    },
     {
       "id": "2e3532ee1fde252f",
       "ilce": "KEÇİÖREN",
